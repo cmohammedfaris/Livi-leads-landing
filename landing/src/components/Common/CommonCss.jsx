@@ -1,0 +1,2 @@
+export const AnimateButton = 'transform hover:scale-105 transition-all duration-300 ease-in-out hover:cursor-pointer';
+export const BaseInput = 'h-10 border-borderprimary border shadow-sm pl-5 rounded-xl';

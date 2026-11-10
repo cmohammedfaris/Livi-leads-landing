@@ -1,0 +1,47 @@
+
+> @livileads/landing@0.1.0 build
+> cross-env NEXT_IGNORE_INCORRECT_LOCKFILE=1 next build
+
+  ▲ Next.js 14.2.35
+  - Environments: .env
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully
+   Linting and checking validity of types     ✓ Linting and checking validity of types 
+   Collecting page data     ✓ Collecting page data 
+ ✓ Generating static pages (23/23)
+   Collecting build traces     ✓ Collecting build traces 
+   Finalizing page optimization     ✓ Finalizing page optimization 
+
+Route (app)                              Size     First Load JS
+┌ ○ /                                    23 kB           179 kB
+├ ○ /_not-found                          873 B          88.2 kB
+├ ○ /about                               1.12 kB         124 kB
+├ ○ /affiliate                           8.72 kB         141 kB
+├ ○ /blogs                               3.47 kB         165 kB
+├ ƒ /blogs/[slug]                        4.08 kB         169 kB
+├ ○ /business                            6.03 kB         138 kB
+├ ○ /contact                             34.2 kB         194 kB
+├ ○ /customer                            5.12 kB         137 kB
+├ ○ /early-access                        2.68 kB         163 kB
+├ ○ /faqs                                177 B           138 kB
+├ ○ /features                            2.66 kB         126 kB
+├ ○ /icon.png                            0 B                0 B
+├ ○ /icon.svg                            0 B                0 B
+├ ○ /platform                            4.5 kB          136 kB
+├ ○ /privacy                             251 B           139 kB
+├ ○ /privacy-policy                      251 B           139 kB
+├ ○ /services                            9.14 kB         165 kB
+├ ○ /support                             179 B           138 kB
+├ ○ /terms                               251 B           138 kB
+├ ○ /terms-and-conditions                249 B           138 kB
+└ ○ /vendors                             9.95 kB         142 kB
++ First Load JS shared by all            87.3 kB
+  ├ chunks/117-0c389612d20ffa62.js       31.7 kB
+  ├ chunks/fd9d1056-6922f449a204c2cc.js  53.6 kB
+  └ other shared chunks (total)          1.97 kB
+
+
+○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+

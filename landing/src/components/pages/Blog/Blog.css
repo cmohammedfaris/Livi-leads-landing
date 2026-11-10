@@ -1,0 +1,147 @@
+/* Blog Common Styles */
+.blog-section-container,
+.blog-detail-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.blog-hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.blog-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 10% 20%, rgba(91, 4, 197, 0.05) 0%, transparent 40%);
+  pointer-events: none;
+}
+
+/* Category Tabs Scrollbar Hiding */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Article Prose Styles */
+.prose p {
+  color: #4a5568;
+  margin-bottom: 1.25rem;
+  line-height: 1.7;
+}
+
+.prose h2,
+.prose h3,
+.prose h4 {
+  color: #212844;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.prose h2 {
+  font-size: 1.35rem;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.prose h3 {
+  font-size: 1.15rem;
+  margin-top: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.prose h4 {
+  font-size: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.prose blockquote {
+  font-style: italic;
+  color: #718096;
+  border-left: 4px solid #5B04C5;
+  padding-left: 1.25rem;
+  margin: 1.5rem 0;
+  background-color: #f7fafc;
+}
+
+.dark .prose blockquote {
+  background-color: rgba(255, 255, 255, 0.02);
+  color: #a0aec0;
+}
+
+.prose ul,
+.prose ol {
+  padding-left: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.prose li {
+  margin-bottom: 0.5rem;
+}
+
+/* Featured Image Aspect Ratio Wrapper */
+.featured-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+/* Social Share Button hover animations */
+.share-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 0.75rem;
+  background: #f7fafc;
+  color: #718096;
+  transition: all 0.2s ease;
+}
+
+.share-btn:hover {
+  background: #EFEFFD;
+  color: #5B04C5;
+  transform: translateY(-2px);
+}
+
+.author-bio-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+}
+
+/* Mobile Responsiveness Rules */
+@media (max-width: 768px) {
+  .blog-hero {
+    padding: 1.5rem 1.25rem !important;
+    border-radius: 1.25rem !important;
+  }
+
+  .featured-image-wrapper {
+    border-radius: 1.25rem !important;
+    margin-bottom: 1.25rem !important;
+  }
+
+  .blog-detail-container {
+    padding: 1rem !important;
+  }
+
+  article {
+    padding: 1.25rem !important;
+    border-radius: 1.25rem !important;
+  }
+
+  .prose h2 {
+    font-size: 1.2rem;
+  }
+}
